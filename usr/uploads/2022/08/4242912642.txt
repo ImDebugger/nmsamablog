@@ -1,0 +1,32 @@
+列表页
+标题
+rge:<div class="zp"><a class="name" href="https://www.630book.com/book_\d+/".*?>([\s\S]*?)</a></div>
+地址
+书-号:<div class="zp"><a class="name" href="https://www.630book.com/book_(\d+)/".*?>[\s\S]*?</a></div>|#|https://www.630book.com/book_[书号]/
+信息页
+标题
+css:meta[property='og:title']|content
+作者
+css:meta[property='og:novel:author']|content
+大分类
+css:meta[property='og:novel:category']|content
+小分类
+css:meta[property='og:novel:category']|content
+频道
+css:meta[property='og:novel:category']|content
+封面
+css:meta[property='og:image']|content
+状态
+css:meta[property='og:novel:status']|content
+简介
+css:meta[property='og:description']|content
+目录页
+标题
+css:.zjbox > dl > dd > a
+地址
+css:.zjbox > dl > dd > a|href
+内容页
+css:#content
+替换
+恋上你看书网[\s\S]*?</a>最新章节！
+<br/>|#|\n
